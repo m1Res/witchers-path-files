@@ -1,19 +1,71 @@
-# Minecraft runtime files
+# ------------------------------
+# GITIGNORE — Minecraft Game Files
+# ------------------------------
+
+# Logs and crash reports
 game/logs/
 game/crash-reports/
-game/saves/
+game/debug.log
+
+# Local user and session data
 game/usercache.json
 game/usernamecache.json
 game/options.txt
+game/optionsof.txt
+game/optionsshaders.txt
+game/servers.dat
+game/realms_persistence.json
 game/session.lock
 
-# Cache / temp
-game/temp/
-game/tmp/
-game/cache/
-game/config/.cache/
+# World saves (do not version control)
+game/saves/
 
-# Backup configs
-game/config/*.bak*
-game/config/*.old*
-game/config/*.backup*
+# Cache / temporary data
+game/cache/
+game/tmp/
+game/temp/
+game/.cache/
+game/.temp/
+game/.DS_Store
+
+# JVM / system crash logs
+game/hs_err_pid*
+game/replay_pid*
+
+# Backup and auto-generated configs
+game/**/*.bak
+game/**/*.bak1
+game/**/*.bak2
+game/**/*.backup
+game/**/*.old
+game/**/*.tmp
+
+# Mod loader cache/index files
+game/mods/.index/
+game/mods/.cache/
+game/mods/.modset/
+
+# Compiled or extracted files
+game/resourcepacks/**/*.zip.tmp
+game/datapacks/**/*.zip.tmp
+game/shaderpacks/**/*.zip.tmp
+
+# Ignore server data if present
+game/eula.txt
+game/server.properties
+game/whitelist.json
+game/ops.json
+game/banned-players.json
+game/banned-ips.json
+
+# Leave main content folders IN repo
+!game/config/
+!game/datapacks/
+!game/defaultconfigs/
+!game/mods/
+!game/resourcepacks/
+!game/shaderpacks/
+!game/manifest.json
+!game/minecraftinstance.json
+!game/modlist.html
+!game/.ready
