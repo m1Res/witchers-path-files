@@ -1,0 +1,48 @@
+# Minecraft runtime files
+logs/
+crash-reports/
+usercache.json
+usernamecache.json
+servers.dat
+options.txt
+optionsof.txt
+optionsshaders.txt
+launcher_accounts.json
+launcher_profiles.json
+realms_persistence.json
+session.lock
+
+# World saves (unless you want to include example worlds)
+saves/
+
+# Cache
+cache/
+shaderpacks/
+config/.cache/
+config/.temp/
+temp/
+tmp/
+
+# JVM crash logs
+hs_err_pid*
+replay_pid*
+
+# Modpack updater files
+*.bak
+*.old
+*.tmp
+*.zip.tmp
+*.disabled
+
+# Fabric/Forge loader specific
+mods/.index/
+mods/.cache/
+mods/.modset/
+
+# Backup configs
+*.bak1
+*.bak2
+*.backup*
+
+# Ignore zip archives that are generated (keep manual ones)
+!*.zip
